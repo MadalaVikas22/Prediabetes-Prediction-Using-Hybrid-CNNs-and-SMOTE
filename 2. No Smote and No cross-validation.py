@@ -124,3 +124,10 @@ ax.set_ylabel('True Labels')
 
 plt.tight_layout()
 plt.show()
+
+metrics_df_no_smote_no_cv = pd.DataFrame({
+    'Classifier': list(results.keys()),
+    'Accuracy': [metrics['accuracy'] for metrics in results.values()],
+    'F1 Score': [metrics['f1_score'] for metrics in results.values()]
+})
+metrics_df_no_smote_no_cv
