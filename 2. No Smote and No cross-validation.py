@@ -109,7 +109,7 @@ results['CNN'] = {
     'conf_matrix': cnn_cm
 }
 
-# Plot all confusion matrices
+# Plot all confusion matrices 
 fig, axes = plt.subplots(2, 3, figsize=(12, 6))
 
 for ax, (name, metrics) in zip(axes.flatten(), results.items()):
